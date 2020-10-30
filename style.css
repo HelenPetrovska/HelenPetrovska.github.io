@@ -45,6 +45,8 @@ body {
     width: 25%;
     float: left;
     border-left: 1px solid #2c71b8;
+    position: relative;
+    z-index: 2;
 }
 .menu__item:last-child {
     border-right: 1px solid #2c71b8;
@@ -63,24 +65,30 @@ body {
     color: #ffffff;
     background-color: #2c71b8;
 }
-.menu>li:hover .product__list {
+.menu>li:hover .products__list {
     display: block;
 }
 .menu>li:hover>a {
     background-color: #2c71b8;
     color: #ffffff;
 }
-.product__list {
-    width: 202%;
-    display: none;
+.fa-angle-down {
+    padding-left: 14px;
 }
-.product__list>li>a {
+.products__list {
+    width: 202%;
+    margin-left: -1px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.products__list>li>a {
     color: #ffffff;
     text-align: left;
     background-color: #2c71b8;
     padding-left: 35px;
 }
-.product__list>li>a:hover {
+.products__list>li>a:hover {
     background-color: #ffffff;
     color: #2c71b8;
 }
@@ -143,4 +151,3 @@ body {
     left: -10px;
     padding-top: 4px;
 }
-
