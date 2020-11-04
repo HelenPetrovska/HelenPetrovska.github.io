@@ -221,7 +221,19 @@ body {
 .product-container {
     border: 1px solid #ffffff;
 }
-.product-item__img {
+.product-item__header {
+    position: relative;
+}
+.product-item__header:before {
+	content: "";
+	border-bottom: 1px solid #ffffff;
+	position: absolute;
+	width: 119.5%;
+	height: 53.8%;
+	transform: rotate(33.5deg);
+}
+.product-item__img a{
+    display: block;
     background-color: rgba(255, 255, 255, 0.75);
 }
 .product-item__img img {
@@ -229,6 +241,37 @@ body {
     margin: 0 auto;
     padding: 44px 0;
 }
+.square {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    padding: 4px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+.square-blue {
+    width: 20px;
+    height: 20px;
+    background-image: url(images/square-blue.png);
+    cursor: pointer;
+}
+.favorite {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    padding: 6px 5px 5px;
+    position: absolute;
+    right: 9px;
+    top: 49px;
+}
+.favorite-blue {
+    width: 18px;
+    height: 17px;
+    background-image: url(images/favorite-blue.png);
+    cursor: pointer;
+}
+
 .product-item__details {
     padding: 15px;
     color: #ffffff;
@@ -236,7 +279,10 @@ body {
     font-size: 21px;
     background-color: rgba(44, 113, 184, 0.75);
 }
-.product-item__details>h3 {
+.product-item__details>a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
     font-size: 30px;
     font-weight: 700;
 }
@@ -258,4 +304,39 @@ body {
 }
 .price>span>sup {
     font-size: 24px;
+}
+.details-btn{
+    text-align: center;
+    border: 1px solid #ffffff;
+    margin: 0 15px;
+}
+.details-btn>a, .add-to-cart-btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+}
+.details-btn>a:hover, .add-to-cart-btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.add-to-cart {
+    border: 1px solid #ffffff;
+    margin: 15px;
+}
+.add-to-cart-btn {
+    line-height: 50px;
+    width: 100%;
+    background-color: rgba(44, 113, 184, 0.75);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(images/white-cart.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-x: 172px;
 }
