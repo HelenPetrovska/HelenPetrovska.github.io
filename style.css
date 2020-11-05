@@ -354,3 +354,10 @@ body {
     background-position: right;
     background-position-x: 172px;
 }
+.load-more {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0 90px 0;
+}
