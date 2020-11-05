@@ -363,6 +363,8 @@ body {
     background-position-x: 172px;
 }
 .load-more {
+    display: block;
+    text-decoration: none;
     color: #ffffff;
     font-size: 36px;
     font-weight: 300;
