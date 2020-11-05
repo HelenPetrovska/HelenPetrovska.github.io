@@ -237,10 +237,19 @@ body {
     background-color: rgba(255, 255, 255, 0.75);
     border-bottom: 1px solid #ffffff;
 }
-.product-item__link{
+.product-item__link {
     display: block;
-    text-align: center;
-    padding-top: 43px;
+    height: 100%;
+    position: relative;
+}
+.product-item__link>img {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 .square-icon {
     width: 30px;
@@ -261,7 +270,6 @@ body {
 .favorite-icon:hover {
     background-image: url(images/favorite-white.png);
     background-color: rgb(44, 113, 184);
-
 }
 .favorite-icon {
     width: 30px;
@@ -360,4 +368,14 @@ body {
     font-weight: 300;
     text-align: center;
     padding: 10px 0 90px 0;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.footer>p{
+    color: #2c71b8;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 100px;
 }
