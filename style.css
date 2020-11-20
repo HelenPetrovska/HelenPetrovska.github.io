@@ -183,13 +183,67 @@ body {
     text-align: center;
 }
 .content {
-    padding-top: 30px;
+    padding: 30px 15px;
 }
 .aside {
     background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     width: 100%;
-    height: 1000px;
+    border-right: 1px solid #ffffff;
+    padding: 30px;
+}
+.aside-block>h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.checkbox-filter__label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.checkbox-filter__label::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.checkbox-filter__label>span {
+    padding-left: 21px;
+}
+.checkbox-filter__list {
+    margin-top: 10px;
+}
+.checkbox-filter__link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 45px;
+    transition: all .2s ease;
+}
+input[type="checkbox"]:checked + label::before {
+    background-color: #ffffff;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.aside__color, .aside__ram {
+    margin-top: 55px;
+}
+.aside>p {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
 }
 .breadcrumb {
     list-style-type: none;
@@ -327,36 +381,40 @@ body {
 .price__big-superscript {
     right: 35px;   
 }
-.details-btn{
-    text-align: center;
-    border: 1px solid #ffffff;
-    margin: 0 15px;
-}
-.details-btn>a, .add-to-cart-btn {
-    text-decoration: none;
+.btn, .btn>a {
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     font-size: 21px;
     font-weight: 700;
     line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
     display: block;
+    border: none;
+    outline: none;
+    background-color: rgba(44, 113, 184, 0.75);
 }
-.details-btn>a:hover, .add-to-cart-btn:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+.submit-btn {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+}
+.details-btn{
+    margin: 0 15px;
+    border: 1px solid #ffffff;
+}
+.details-btn>a:hover, .add-to-cart-btn:hover, .submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 .add-to-cart {
-    border: 1px solid #ffffff;
     margin: 15px;
 }
 .add-to-cart-btn {
-    line-height: 50px;
     width: 100%;
-    background-color: rgba(44, 113, 184, 0.75);
-    color: #ffffff;
-    border: none;
-    outline: none;
-    cursor: pointer;
     padding-right: 30px;
-    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ffffff;
     background-image: url(images/white-cart.png);
     background-repeat: no-repeat;
     background-position: right;

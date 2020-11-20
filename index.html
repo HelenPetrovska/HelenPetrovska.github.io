@@ -71,11 +71,126 @@
             </div>
         </div>
         <div class="container">
-            <div class="row content">
+            <div class="row">
                 <div class="col-md-3">
-                    <div class="aside">filter</div>
+                    <aside class="aside">
+                        <div class="aside__device-type aside-block">
+                            <h3>Device type</h3>
+                            <ul class="checkbox-filter__list">
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="laptop">
+                                        <label for="laptop" class="checkbox-filter__label">
+                                            <span>Laptop</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="tablet">
+                                        <label for="tablet" class="checkbox-filter__label">
+                                            <span>Tablet</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aside__color aside-block">
+                            <h3>Color</h3>
+                            <ul class="checkbox-filter__list">
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="black">
+                                        <label for="black" class="checkbox-filter__label">
+                                            <span>Black</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="red">
+                                        <label for="red" class="checkbox-filter__label">
+                                            <span>Red</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="green">
+                                        <label for="green" class="checkbox-filter__label">
+                                            <span>Green</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="blue">
+                                        <label for="blue" class="checkbox-filter__label">
+                                            <span>Blue</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="orange">
+                                        <label for="orange" class="checkbox-filter__label">
+                                            <span>Orange</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="aside__ram aside-block">
+                            <h3>RAM</h3>
+                            <ul class="checkbox-filter__list">
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="1GB">
+                                        <label for="1GB" class="checkbox-filter__label">
+                                            <span>1GB</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="2GB">
+                                        <label for="2GB" class="checkbox-filter__label">
+                                            <span>2GB</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="4GB">
+                                        <label for="4GB" class="checkbox-filter__label">
+                                            <span>4GB</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="6GB">
+                                        <label for="6GB" class="checkbox-filter__label">
+                                            <span>6GB</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="checkbox-filter__item">
+                                    <a href="#" class="checkbox-filter__link">
+                                        <input type="checkbox" id="8GB">
+                                        <label for="8GB" class="checkbox-filter__label">
+                                            <span>8GB</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>  
+                        <p>Show more options ...</p> 
+                        <button class="btn submit-btn" type="submit">Submit</button>
+  
+                    </aside>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 content">
                     <div class="row">
                         <div class="col-md-8">
                             <ul class="breadcrumb">
@@ -109,11 +224,11 @@
                                             <div class="price__superscript">25</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -137,11 +252,11 @@
                                             <div class="price__superscript price__big-superscript">99</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -165,11 +280,11 @@
                                             <div class="price__superscript">50</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -195,11 +310,11 @@
                                             <div class="price__superscript">25</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -223,11 +338,11 @@
                                             <div class="price__superscript price__big-superscript">99</div>
                                         </div>                                    
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -251,11 +366,11 @@
                                             <div class="price__superscript">50</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -281,11 +396,11 @@
                                             <div class="price__superscript">25</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -309,11 +424,11 @@
                                             <div class="price__superscript price__big-superscript">99</div>
                                         </div>                                    
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
@@ -337,11 +452,11 @@
                                             <div class="price__superscript">50</div>
                                         </div>
                                     </div>
-                                    <div class="details-btn">
+                                    <div class="btn details-btn">
                                         <a href="#">MORE DETAILS</a>
                                     </div>
                                     <div class="add-to-cart">
-                                        <button class="add-to-cart-btn" type="submit">ADD TO CART</button>
+                                        <button class="btn add-to-cart-btn" type="submit">ADD TO CART</button>
                                     </div>
                                 </div>  
                             </div>
