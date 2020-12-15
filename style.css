@@ -228,22 +228,9 @@ body {
     font-weight: 300;
     line-height: 45px;
     transition: all .2s ease;
-
 }
 input[type="checkbox"]:checked + label::before {
     background-color: #ffffff;
-        position: absolute;
-        left: 0;
-        top: 2px;
-        display: block;
-        width: 16px;
-        height: 16px;
-        border: 1px solid #d2d2d2;
-        border-radius: 4px;
-        box-sizing: border-box;
-        background-color: #fff;
-        transition: background-color .2s ease-in-out,border .2s ease-in-out;
-        content: "";
 }
 input[type="checkbox"] {
     display: none;
