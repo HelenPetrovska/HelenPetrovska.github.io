@@ -336,6 +336,7 @@ input[type="checkbox"] {
     position: absolute;
     right: 9px;
     top: 49px;
+    color: black;
 }
 .product-item__details {
     padding: 15px;
