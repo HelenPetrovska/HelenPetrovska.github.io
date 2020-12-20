@@ -321,10 +321,6 @@ input[type="checkbox"] {
     background-image: url(images/square-white.png);
     background-color: rgb(44, 113, 184);
 }
-.favorite-icon:hover {
-    background-image: url(images/favorite-white.png);
-    background-color: rgb(44, 113, 184);
-}
 .favorite-icon {
     width: 30px;
     height: 30px;
@@ -337,6 +333,10 @@ input[type="checkbox"] {
     right: 9px;
     top: 49px;
     color: black;
+}
+.favorite-icon:hover, .liked {
+    background-image: url(images/favorite-white.png);
+    background-color: rgb(44, 113, 184);
 }
 .product-item__details {
     padding: 15px;
@@ -439,4 +439,60 @@ input[type="checkbox"] {
     font-weight: 300;
     text-align: center;
     line-height: 100px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 100px;
+    display: none;
+}
+.modal-block {
+    width: 600px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.75);
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 70px;
+}
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.modal-title {
+    font-size: 16px;
+    text-align: center;
+}
+.modal__input {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.input-title {
+    text-align: left;
+}
+.modal-input {
+    height: 40px;
+    width: 100%;
+}
+.send-btn {
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
 }
