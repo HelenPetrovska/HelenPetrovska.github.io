@@ -233,7 +233,37 @@ $(document).ready(function () {
         dots:true,
     });
 
+    function arrowSliderPrev () {
+        let prevBtn = document.querySelector(".slick-prev");
+        let i = document.createElement("i");
+        prevBtn.append(i);
+        i.classList.add("fa");
+        i.classList.add("fa-angle-left");
+        i.setAttribute("aria-hidden", true);
+    }
+    arrowSliderPrev (); 
+
+    function arrowSliderNext () {
+        let nextBtn = document.querySelector(".slick-next");
+        let i = document.createElement("i");
+        nextBtn.append(i);
+        i.classList.add("fa");
+        i.classList.add("fa-angle-right");
+        i.setAttribute("aria-hidden", true);
+    }
+    arrowSliderNext (); 
+
     
+
+    // let nextBtn = document.querySelector(".slick-next");
+
+    // nextBtn.append(i);
+
+    // let img = document.createElement("img");
+// let avatar = user.avatar_url;
+// img.setAttribute("src",avatar);
+// document.body.append(img);
+
     // sort
 
     $('#select-beast').selectize({

@@ -522,15 +522,14 @@ input[type="checkbox"] {
     font-size: 100px;
     font-weight: 100;
 }
-.slick-prev:before {
+.slick-prev:before, .slick-next:before {
     content: "\003c";
-    font-size: 50px;
-    opacity: 1;
+    font-size: 0px;
+    opacity: 0;
 }
-.slick-next:before {
-    content: "\003e";
-    font-size: 50px;
-    opacity: 1;
+.slick-prev, .slick-next {
+    height: 130px;
+    width: 40px;
 }
 .slick-dots li.slick-active button:before {
     background-color: #ffffff;
@@ -541,6 +540,10 @@ input[type="checkbox"] {
     border: 1px solid #ffffff;
     width: 7px;
     height: 7px;
+}
+.fa-angle-left, .fa-angle-right {
+    font-size: 100px;
+    color: #ffffff;
 }
 
 /* sort */
